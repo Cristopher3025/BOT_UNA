@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="crisurenavalverde.bot_una.UserListController">
+    <children>
+        <VBox spacing="10" layoutX="20" layoutY="20" prefWidth="600" prefHeight="400">
+            <Label text="Lista de Usuarios" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+            <TableView fx:id="userTable">
+                <columns>
+                    <TableColumn fx:id="usernameColumn" text="Username" prefWidth="150"/>
+                    <TableColumn fx:id="roleColumn" text="Role" prefWidth="100"/>
+                    <TableColumn fx:id="expiredColumn" text="Fecha Expiración" prefWidth="150"/>
+                </columns>
+            </TableView>
+            <Button text="Volver" onAction="#handleBack" />
+        </VBox>
+    </children>
+</AnchorPane>
