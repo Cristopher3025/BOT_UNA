@@ -1,0 +1,69 @@
+/* una_style.css — versión roja UNA */
+
+/* Fuente y fondo general */
+.root {
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+    -fx-background-color: #F4F4F4; /* gris neutro */
+}
+
+/* Contenedor principal */
+#container {
+    -fx-padding: 20;
+    -fx-spacing: 15;
+    -fx-background-color: #FFFFFF; /* blanco puro */ 
+    -fx-border-color: #ED1B24;      /* rojo principal UNA */ 
+    -fx-border-width: 2;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+/* Logo UNA */
+#logo {
+    -fx-fit-width: 120;
+    -fx-preserve-ratio: true;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 4, 0, 0, 2);
+    -fx-padding: 10;
+}
+
+/* Título principal */
+#titleLabel {
+    -fx-font-size: 24px;
+    -fx-text-fill: #ED1B24; /* rojo principal UNA */ 
+    -fx-font-weight: bold;
+}
+
+/* Campos de formulario */
+.text-field, .password-field, .date-picker {
+    -fx-pref-width: 300;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: #CCCCCC;
+    -fx-padding: 8;
+}
+
+/* Botones */
+.button {
+    -fx-background-color: #ED1B24;  /* rojo principal UNA */ 
+    -fx-text-fill: #FFFFFF;         /* blanco de alto contraste */ 
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+    -fx-padding: 8 15;
+}
+.button:hover {
+    -fx-background-color: #C80A19;  /* rojo secundario más oscuro */ 
+}
+
+/* Mensajes de estado (errores o alertas) */
+#statusLabel {
+    -fx-text-fill: #ED1B24; /* rojo principal UNA */ 
+    -fx-font-style: italic;
+}
+
+/* Encabezado de tablas */
+.table-view .column-header-background {
+    -fx-background-color: #ED1B24; /* rojo principal UNA */ 
+}
+.table-view .column-header .label {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+}

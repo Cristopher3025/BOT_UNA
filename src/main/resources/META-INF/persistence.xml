@@ -6,7 +6,8 @@
 
   <persistence-unit name="unaBotPersistence" transaction-type="RESOURCE_LOCAL">
     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
-    <class>ceuv.ejexmploconexion.Ejemplo</class>
+    
+    <class>crisurenavalverde.bot_una.UsersBot</class>
 
     <properties>
       <property name="jakarta.persistence.jdbc.url" value="jdbc:oracle:thin:@//localhost:1521/FREE"/>
